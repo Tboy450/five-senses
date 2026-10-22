@@ -4,6 +4,8 @@ A clean WebGL board game for two people sharing a screen, inspired by the suppli
 
 [Play the game](https://five-senses-together-core.tboy450.chatgpt.site/) · [Preview the original three](https://five-senses-together-core.tboy450.chatgpt.site/ghosts.html) · [Download the reference samples](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/original-three-v003.zip) · [Earlier five-character collection](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/little-misfits-v002.zip)
 
+See [UPDATE_CHECKLIST.md](UPDATE_CHECKLIST.md) for shipped features, next polish, and later solo/AI/online variants. Full gameplay instructions are in [the rulebook](dist/RULES.md).
+
 ## Reference edition v003
 
 The three main characters now follow the supplied cover and real clay figures more closely: tall brown-gray cat ghost, squat blue blob, and wide red-orange ghost. They use oversized cream eyes with irregular dark crescents, simple mouths, and no fangs. These are modeled interpretations rather than exact scans. Individual GLBs and the combined trio are versioned in the asset archives.
