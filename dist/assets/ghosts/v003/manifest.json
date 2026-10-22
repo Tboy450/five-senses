@@ -1,0 +1,91 @@
+{
+  "collection": "The Original Three — reference clay models",
+  "version": "003",
+  "date": "2026-10-22",
+  "notes": [
+    "Closer interpretation of the cover and real clay trio supplied by the user.",
+    "Brown-gray tall cat ghost, squat blue blob, wide red-orange ghost.",
+    "Oversized cream eyes with irregular dark crescents; simple mouths; no fangs.",
+    "Embedded materials and geometry. Static meshes, +Y up, +Z front, base-center pivots.",
+    "These are modeled interpretations, not photogrammetry scans or exact replicas."
+  ],
+  "characters": [
+    {
+      "id": "moss",
+      "name": "Moss",
+      "color": "#827767",
+      "accent": "#c9c9af",
+      "title": "The tall brown-gray cat ghost",
+      "sense": "Touch",
+      "ears": "cat",
+      "width": 1,
+      "height": 1.14,
+      "seed": 12,
+      "look": 0,
+      "teeth": 0,
+      "reference": true,
+      "description": "The tall brown-gray figure from your original trio: soft cat ears, a long pear-shaped clay body, enormous cream button eyes, and a quiet pressed-in smile.",
+      "traits": [
+        "Tall brown-gray body",
+        "Soft pointed cat ears",
+        "Wide cream eyes & simple smile"
+      ],
+      "file": "moss-reference-v003.glb",
+      "bytes": 429352,
+      "sha256": "4ef17f684841ecf78a50fb7803223b4d795226a36f51b3508b8bbdee5367be4b"
+    },
+    {
+      "id": "blu",
+      "name": "Blu",
+      "color": "#4e9ab5",
+      "accent": "#bfdce6",
+      "title": "The curious blue blob",
+      "sense": "Sight",
+      "ears": "nubs",
+      "width": 1.1,
+      "height": 0.91,
+      "seed": 2,
+      "look": -0.022,
+      "teeth": 0,
+      "reference": true,
+      "description": "The squat blue ghost from your cover: a broad puddled base, tiny uneven ear nubs, huge cream eyes, and a small open mouth. Rounded, awkward, and handmade.",
+      "traits": [
+        "Squat blue blob silhouette",
+        "Oversized off-center cream eyes",
+        "Tiny nubs & open mouth"
+      ],
+      "file": "blu-reference-v003.glb",
+      "bytes": 456880,
+      "sha256": "f0052ce7f0505336b2a98e287848d7cf970a2a8e8bbe6473ba76f19a3f134917"
+    },
+    {
+      "id": "ember",
+      "name": "Ember",
+      "color": "#df5c3e",
+      "accent": "#f4c0aa",
+      "title": "The wide red-orange ghost",
+      "sense": "Taste",
+      "ears": "horns",
+      "width": 1.15,
+      "height": 0.96,
+      "seed": 7,
+      "look": 0.023,
+      "teeth": 0,
+      "reference": true,
+      "description": "The red-orange misfit from your cover: a wide sloping base, one rounded head bump, one little side point, and a lopsided open smile beneath wandering cream eyes.",
+      "traits": [
+        "Wide red-orange clay base",
+        "Rounded bump & one side horn",
+        "Uneven eyes & open grin"
+      ],
+      "file": "ember-reference-v003.glb",
+      "bytes": 479700,
+      "sha256": "4e602947517e4274e2d20b70ba21ba7e82e596d72148e1c2a0e2fa19a509ea3b"
+    }
+  ],
+  "lineup": {
+    "file": "original-three-v003.glb",
+    "bytes": 1365836,
+    "sha256": "9c16a391ac01ee0a1c060945e5276b6715969f396efe000149d50f1c0fa92b46"
+  }
+}

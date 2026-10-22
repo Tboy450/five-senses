@@ -14,7 +14,7 @@ Both explorers start on space 0, with 0 points. All five beacons are off. Shared
 
 1. **Roll a d20, or recharge.** Rolls 1–5 move 1 space; 6–10 move 2; 11–15 move 3; 16–20 move 4. A natural 20 also gives the rolling player 5 points. Recharging replaces the entire turn: stay put and add 1 shared power, up to 3. Recharge is available only below 3 power.
 2. **Follow the single spiral route.** Move forward. An unrestored beacon at space 4, 8, 12, 16, or 20 stops the move early; unused movement is discarded. Resolve a joint repair instead of a normal challenge. Landing on a restored beacon gives a normal snapshot challenge for that beacon's sense.
-3. **Otherwise, take a snapshot challenge.** Choose Safe (3 memory cards) or Bold (5 cards). Look as long as you need, hide the cards, then identify which word occupied the requested position. Safe gives +5 for correct, 0 for wrong. Bold gives +15 for correct, −5 for wrong. A score never falls below zero. The other player does not help with solo snapshots.
+3. **Otherwise, take a snapshot challenge.** Choose Safe (3 memory cards) or Bold (5 cards). Look as long as you need, hide the cards, then identify which word occupied the requested position. Safe gives the large point value printed on your tile (5–30) for correct, 0 for wrong. Bold gives that tile value +10 for correct, −5 for wrong. Small numbers identify route positions; large numbers are points. Restored beacons use a base value of 10. A score never falls below zero. The other player does not help with solo snapshots.
 4. **Pass the turn** after resolving the challenge or repair, arriving at the core, or recharging. A repair failure must be retried before any turn can continue.
 
 ## Repairing a beacon
@@ -47,4 +47,4 @@ Progress saves automatically in this browser when browser storage is available. 
 
 ## Design notes
 
-The five sense beacons preserve the original game's collective-restoration idea. A d20 replaces the ordinary die, with four movement bands that keep the board pace manageable. Optional risk changes scoring without skipping cooperation. A shared power reserve makes recharging a strategic contribution. The handmade blue and coral figures become explorers; the gray figure watches over the core.
+The five sense beacons preserve the original game's collective-restoration idea. A d20 replaces the ordinary die, with four movement bands that keep the board pace manageable. Optional risk changes scoring without skipping cooperation. A shared power reserve makes recharging a strategic contribution. The reference blue and red-orange figures become explorers; the gray figure watches over the core.

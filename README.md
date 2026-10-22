@@ -2,7 +2,13 @@
 
 A clean WebGL board game for two people sharing a screen, inspired by the supplied handmade board and clay characters. Built with locally bundled Three.js 0.160.1 and browser JavaScript. No image generation service was used.
 
-[Play the game](https://five-senses-together-core.tboy450.chatgpt.site/) · [Meet the clay ghosts](https://five-senses-together-core.tboy450.chatgpt.site/ghosts.html) · [Download the asset archive](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/little-misfits-v002.zip)
+[Play the game](https://five-senses-together-core.tboy450.chatgpt.site/) · [Preview the original three](https://five-senses-together-core.tboy450.chatgpt.site/ghosts.html) · [Download the reference samples](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/original-three-v003.zip) · [Earlier five-character collection](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/little-misfits-v002.zip)
+
+## Reference edition v003
+
+The three main characters now follow the supplied cover and real clay figures more closely: tall brown-gray cat ghost, squat blue blob, and wide red-orange ghost. They use oversized cream eyes with irregular dark crescents, simple mouths, and no fangs. These are modeled interpretations rather than exact scans. Individual GLBs and the combined trio are versioned in the asset archives.
+
+The board uses the supplied neon concept artwork as its perimeter, hand-painted-style point tiles, a cyan route, and the original pink/lime/cyan/orange/purple/red point palette. Large numbers are actual snapshot rewards: Safe earns the tile value; Bold earns tile value +10, with a −5 miss penalty. Small numbers mark route positions. D20 movement and cooperative repairs remain the same.
 
 ## Little Misfits — character collection v002
 

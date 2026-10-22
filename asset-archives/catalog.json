@@ -1,143 +1,91 @@
 {
-  "collection": "5 Senses — Little Misfits",
-  "version": "002",
+  "collection": "The Original Three — reference clay models",
+  "version": "003",
   "date": "2026-10-22",
-  "format": "glTF 2.0 binary (.glb)",
-  "coordinates": {
-    "up": "+Y",
-    "front": "+Z",
-    "pivot": "base center",
-    "nominalHeight": "1 scene unit before trait scaling"
-  },
   "notes": [
-    "Original procedural models inspired by the supplied handmade clay figures.",
-    "Five original characters share a clay blob ghost body with distinct colors, silhouettes, eyes, and expressions.",
-    "Static meshes with named parts; no skeletal rig or embedded animation.",
-    "Clay surface uses actual geometry and vertex colors; no external textures required.",
-    "Digital game assets; overlapping parts are not prepared as a single watertight print."
+    "Closer interpretation of the cover and real clay trio supplied by the user.",
+    "Brown-gray tall cat ghost, squat blue blob, wide red-orange ghost.",
+    "Oversized cream eyes with irregular dark crescents; simple mouths; no fangs.",
+    "Embedded materials and geometry. Static meshes, +Y up, +Z front, base-center pivots.",
+    "These are modeled interpretations, not photogrammetry scans or exact replicas."
   ],
   "characters": [
     {
-      "id": "blu",
-      "name": "Blu",
-      "color": "#67adc3",
-      "accent": "#bfdce6",
-      "title": "The curious one",
-      "sense": "Sight",
+      "id": "moss",
+      "name": "Moss",
+      "color": "#827767",
+      "accent": "#c9c9af",
+      "title": "The tall brown-gray cat ghost",
+      "sense": "Touch",
       "ears": "cat",
       "width": 1,
-      "height": 1,
-      "seed": 2,
-      "look": -0.018,
-      "teeth": 1,
-      "description": "A little cat, a little ghost, and entirely too interested in what is around the next corner. One bent ear. Two enormous, wandering eyes.",
+      "height": 1.14,
+      "seed": 12,
+      "look": 0,
+      "teeth": 0,
+      "reference": true,
+      "description": "The tall brown-gray figure from your original trio: soft cat ears, a long pear-shaped clay body, enormous cream button eyes, and a quiet pressed-in smile.",
       "traits": [
-        "Bent cat ears",
-        "Curious button eyes",
-        "One tiny fang"
+        "Tall brown-gray body",
+        "Soft pointed cat ears",
+        "Wide cream eyes & simple smile"
       ],
-      "file": "blu-v002.glb",
-      "bytes": 532628,
-      "sha256": "399fe0a383efc61657e03b71a6130d1325016b2efcf3203a6cb970407278dd2e"
+      "file": "moss-reference-v003.glb",
+      "bytes": 429352,
+      "sha256": "4ef17f684841ecf78a50fb7803223b4d795226a36f51b3508b8bbdee5367be4b"
+    },
+    {
+      "id": "blu",
+      "name": "Blu",
+      "color": "#4e9ab5",
+      "accent": "#bfdce6",
+      "title": "The curious blue blob",
+      "sense": "Sight",
+      "ears": "nubs",
+      "width": 1.1,
+      "height": 0.91,
+      "seed": 2,
+      "look": -0.022,
+      "teeth": 0,
+      "reference": true,
+      "description": "The squat blue ghost from your cover: a broad puddled base, tiny uneven ear nubs, huge cream eyes, and a small open mouth. Rounded, awkward, and handmade.",
+      "traits": [
+        "Squat blue blob silhouette",
+        "Oversized off-center cream eyes",
+        "Tiny nubs & open mouth"
+      ],
+      "file": "blu-reference-v003.glb",
+      "bytes": 456880,
+      "sha256": "f0052ce7f0505336b2a98e287848d7cf970a2a8e8bbe6473ba76f19a3f134917"
     },
     {
       "id": "ember",
       "name": "Ember",
-      "color": "#e77860",
+      "color": "#df5c3e",
       "accent": "#f4c0aa",
-      "title": "The lovable troublemaker",
+      "title": "The wide red-orange ghost",
       "sense": "Taste",
       "ears": "horns",
-      "width": 1.03,
-      "height": 0.93,
+      "width": 1.15,
+      "height": 0.96,
       "seed": 7,
       "look": 0.023,
-      "teeth": 2,
-      "description": "A warm coral blob with crooked little devil horns and a grin that usually means trouble. Brave first. Thinks about it afterward.",
-      "traits": [
-        "Crooked devil horns",
-        "Cheeky open grin",
-        "Two little fangs"
-      ],
-      "file": "ember-v002.glb",
-      "bytes": 536024,
-      "sha256": "549edbee2daaa499fc4470d8ff15831be1bc4fdefb13c68928bea008d21c4e32"
-    },
-    {
-      "id": "moss",
-      "name": "Moss",
-      "color": "#92917e",
-      "accent": "#c9c9af",
-      "title": "The sleepy old soul",
-      "sense": "Touch",
-      "ears": "cat",
-      "width": 1.1,
-      "height": 1.08,
-      "seed": 12,
-      "look": 0,
       "teeth": 0,
-      "sleepy": true,
-      "description": "Ash-gray clay, tall cat ears, and the very slow blink of someone who has seen a lot of adventures. The steady heart of the group.",
+      "reference": true,
+      "description": "The red-orange misfit from your cover: a wide sloping base, one rounded head bump, one little side point, and a lopsided open smile beneath wandering cream eyes.",
       "traits": [
-        "Tall cat ears",
-        "Heavy eyelids",
-        "Soft clay folds"
+        "Wide red-orange clay base",
+        "Rounded bump & one side horn",
+        "Uneven eyes & open grin"
       ],
-      "file": "moss-v002.glb",
-      "bytes": 602264,
-      "sha256": "67f0abc9a6b3d4ad5712ad6f73f2bff833f7d461cf06457db5e8ae9a05c4d3b2"
-    },
-    {
-      "id": "mallow",
-      "name": "Mallow",
-      "color": "#af91c6",
-      "accent": "#d8c8e6",
-      "title": "The shy daydreamer",
-      "sense": "Hearing",
-      "ears": "folded",
-      "width": 1.13,
-      "height": 0.89,
-      "seed": 18,
-      "look": -0.012,
-      "teeth": 1,
-      "description": "A squishy lilac ghost with one folded ear and a very small, very brave smile. Quietly notices the things everyone else misses.",
-      "traits": [
-        "One folded ear",
-        "Uneven giant eyes",
-        "Shy little smile"
-      ],
-      "file": "mallow-v002.glb",
-      "bytes": 505396,
-      "sha256": "f7c28060a6e6764bd3218bc0cc77f28dc4cfed776dfa00ef552e869bed4f11ff"
-    },
-    {
-      "id": "glim",
-      "name": "Glim",
-      "color": "#d5b45d",
-      "accent": "#efe0b2",
-      "title": "The golden oddball",
-      "sense": "Smell",
-      "ears": "curl",
-      "width": 0.97,
-      "height": 1,
-      "seed": 24,
-      "look": 0.018,
-      "teeth": 2,
-      "cyclops": true,
-      "description": "One huge eye, one unruly horn, and absolutely no idea how to be subtle. A sunny little mischief-maker with a nose for adventure.",
-      "traits": [
-        "One oversized eye",
-        "Single curled horn",
-        "Lopsided grin"
-      ],
-      "file": "glim-v002.glb",
-      "bytes": 377056,
-      "sha256": "9abbdcf07b94ae68961b27b8e7bec96192d8103ae59637b11435333317035674"
+      "file": "ember-reference-v003.glb",
+      "bytes": 479700,
+      "sha256": "4e602947517e4274e2d20b70ba21ba7e82e596d72148e1c2a0e2fa19a509ea3b"
     }
   ],
   "lineup": {
-    "file": "little-misfits-lineup-v002.glb",
-    "bytes": 2553184,
-    "sha256": "e9833ac1ffd1c145c692fe82bb5780932dbe365bf126a51065a95fddd67a056e"
+    "file": "original-three-v003.glb",
+    "bytes": 1365836,
+    "sha256": "9c16a391ac01ee0a1c060945e5276b6715969f396efe000149d50f1c0fa92b46"
   }
 }
