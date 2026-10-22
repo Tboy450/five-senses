@@ -17,6 +17,7 @@
 - [x] Board-tile styling for the roll map, reward badges, and memory cards; repair-code halves coloured per player.
 - [x] Recall question shows numbered slots with the asked card highlighted, and 5-card sets lay out as a clear 3 + 2 grid.
 - [x] On-screen zoom in/out buttons.
+- [x] GitHub Pages copy at https://tboy450.github.io/five-senses/, redeployed by a workflow on every push to `main`.
 
 ## Shipped
 
@@ -59,4 +60,4 @@
 - [ ] Run `node --test tests/game.test.mjs tests/models.test.mjs`.
 - [ ] Re-export changed 3D assets, verify checksums, and retain the previous archive.
 - [ ] Update README, checklist, and release notes.
-- [ ] Push matching source to GitHub and Sites, deploy, and verify the public URL.
+- [ ] Push matching source to GitHub (auto-deploys GitHub Pages) and republish the chatgpt.site link from Codex; verify both public URLs.

@@ -2,7 +2,7 @@
 
 A clean WebGL board game for two people sharing a screen, inspired by the supplied handmade board and clay characters. Built with locally bundled Three.js 0.160.1 and browser JavaScript. No image generation service was used.
 
-[Play the game](https://five-senses-together-core.tboy450.chatgpt.site/) · [Preview the original three](https://five-senses-together-core.tboy450.chatgpt.site/ghosts.html) · [Download the reference samples](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/original-three-v003.zip) · [Earlier five-character collection](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/little-misfits-v002.zip)
+[Play the game](https://five-senses-together-core.tboy450.chatgpt.site/) · [Play on GitHub Pages](https://tboy450.github.io/five-senses/) · [Preview the original three](https://five-senses-together-core.tboy450.chatgpt.site/ghosts.html) · [Download the reference samples](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/original-three-v003.zip) · [Earlier five-character collection](https://five-senses-together-core.tboy450.chatgpt.site/assets/ghosts/little-misfits-v002.zip)
 
 See [UPDATE_CHECKLIST.md](UPDATE_CHECKLIST.md) for shipped features, next polish, and later solo/AI/online variants. Full gameplay instructions are in [the rulebook](dist/RULES.md).
 
@@ -28,7 +28,7 @@ Landscape screens 900px and wider fit the scores, board, and action panel into o
 
 ## Play locally
 
-Run `node server.mjs` from this directory (set `PORT` to use another port), then open http://127.0.0.1:4173 in a normal browser. Serve `dist/` with any static web server. The game needs no external assets, account, database, network calls, or AI service at runtime. It stores progress and preferences in browser localStorage. WebGL is used for 3D; the text route and numeric roll fallback preserve gameplay if unavailable.
+Run `node server.mjs` from this directory (set `PORT` to use another port), then open http://127.0.0.1:4173 in a normal browser. Serve `dist/` with any static web server. Every push to `main` that changes `dist/` runs the tests and redeploys [the GitHub Pages copy](https://tboy450.github.io/five-senses/) (`.github/workflows/pages.yml`). The game needs no external assets, account, database, network calls, or AI service at runtime. It stores progress and preferences in browser localStorage. WebGL is used for 3D; the text route and numeric roll fallback preserve gameplay if unavailable.
 
 ## Contents
 
