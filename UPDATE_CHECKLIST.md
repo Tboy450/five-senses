@@ -1,5 +1,23 @@
 # Game update checklist
 
+## Priority — screen fit & neon art theme (v006)
+
+- [x] Desktop/laptop landscape: header, scores, board, and d20 panel fit one screen with no page scroll; the side panel scrolls on its own if needed.
+- [x] Board fills its stage: tighter camera framing, a centred target, and a sense legend that sits beside the board instead of on top of it.
+- [x] Mid-width desktops (900–1199px): the legend moves to a strip under the board.
+- [x] Phones: full-width board, view buttons in a band above the art, and the legend under the board.
+- [x] Phones: a floating "↓ Roll the d20"-style shortcut that jumps to the current action.
+- [x] Landscape phones: board left, scores and actions right, controls kept off the board.
+- [x] Portrait tablets and stretched portrait windows use the stacked layout instead of a squeezed desktop grid.
+- [x] Larger type throughout: no text below ~11px; scores, headings, and buttons sized up.
+- [x] Theme sampled from the board art: blurred art backdrop, the painted "5 SENSES" logo, the art's own SEE/HEAR/SMELL/TASTE/TOUCH icons, dripping-paint header edge, neon hand-drawn panel strokes, and marker lettering.
+- [x] Board caption and overlays made nearly transparent.
+- [x] 3D table: transparent stage, ink-black base with a neon rim, and the artwork frame at full brightness.
+- [x] d20: painted swirl pattern on the faces and bold graffiti numerals in the logo's sunset gradient.
+- [x] Board-tile styling for the roll map, reward badges, and memory cards; repair-code halves coloured per player.
+- [x] Recall question shows numbered slots with the asked card highlighted, and 5-card sets lay out as a clear 3 + 2 grid.
+- [x] On-screen zoom in/out buttons.
+
 ## Shipped
 
 - [x] Two-human, shared-screen d20 game with saved progress.
@@ -15,9 +33,12 @@
 
 ## Next polish
 
+- [ ] Confirm the reported "Safe/Bold answers never count as correct" issue is gone on the device where it was seen (not reproducible in browser runs: 3-card and 5-card correct answers scored).
 - [ ] Play a complete session with two people and record pacing, clarity, and challenge difficulty.
 - [ ] Test on physical iPhone/iPad and Android devices, including touch orbit and landscape mode.
-- [ ] Add on-screen zoom controls and a compact mobile action shortcut.
+- [ ] Add pinch-to-zoom on touch screens.
+- [ ] Bundle a matching marker/graffiti web font so lettering looks the same on every device (it currently uses system marker fonts: Segoe Print, Marker Felt, Chalkboard).
+- [ ] Restyle the ghost studio's light "clay room" stage to match the neon theme.
 - [ ] Add player character selection and keep the chosen model with the saved game.
 - [ ] Refine clay surfaces, eye shapes, and animation from feedback on the three samples.
 - [ ] Add gentle claymation idle, hop, celebration, and repair animations.
@@ -34,7 +55,7 @@
 
 ## Each release
 
-- [ ] Check desktop, narrow mobile, and landscape layouts.
+- [ ] Check desktop (1280×720, 1440×900, 1920×1080), mid-width (1024×768), narrow mobile (375×812), landscape phone (844×390), and portrait tablet (820×1180) layouts.
 - [ ] Run `node --test tests/game.test.mjs tests/models.test.mjs`.
 - [ ] Re-export changed 3D assets, verify checksums, and retain the previous archive.
 - [ ] Update README, checklist, and release notes.
