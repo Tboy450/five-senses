@@ -14,6 +14,10 @@ The board uses the supplied neon concept artwork as its perimeter, hand-painted-
 
 Five original cute demonic clay blob ghosts share a handmade family shape and differ in color, proportions, ears/horns, eyes, expression, and personality: Blu (curious blue cat ghost), Ember (coral troublemaker with crooked horns), Moss (sleepy ash-gray guardian), Mallow (shy lilac ghost with a folded ear), and Glim (golden cyclops with a curled horn). The game uses Blu, Ember, and Moss. All five have individual downloadable GLBs and a combined lineup, archived with SHA-256 hashes. These are static digital meshes; the browser provides procedural idle motion. The previous tabletop model is preserved under asset-archives/v001-original.
 
+## Interface and screen fit
+
+The game uses a dark neon interface, cyan and pink accents, an obsidian d20 with bright face numbers, and touch-sized controls. Desktop screens place actions beside the board; mobile screens stack the board and actions. The camera fits the entire tabletop to the available viewport and supports orbit, zoom, and an overhead view. Full gameplay details are in `dist/RULES.md` and the in-game help.
+
 ## Play locally
 
 Run `node server.mjs` from this directory, then open http://127.0.0.1:4173 in a normal browser. Serve `dist/` with any static web server. The game needs no external assets, account, database, network calls, or AI service at runtime. It stores progress and preferences in browser localStorage. WebGL is used for 3D; the text route and numeric roll fallback preserve gameplay if unavailable.
