@@ -34,7 +34,8 @@
 
 ## Next polish
 
-- [ ] Confirm the reported "Safe/Bold answers never count as correct" issue is gone on the device where it was seen (not reproducible in browser runs: 3-card and 5-card correct answers scored).
+- [x] Safe/Bold answers always marked wrong: a double-click or double-tap on Safe/Bold landed on the newly drawn "hide the cards" button and skipped the cards, and the shuffled answer buttons then read like the card order. Fixed with a brief click guard on new screens, a "buttons are shuffled" note, and a result screen that reveals the real order.
+- [ ] Confirm on the device where the Safe/Bold issue was seen.
 - [ ] Play a complete session with two people and record pacing, clarity, and challenge difficulty.
 - [ ] Test on physical iPhone/iPad and Android devices, including touch orbit and landscape mode.
 - [ ] Add pinch-to-zoom on touch screens.
