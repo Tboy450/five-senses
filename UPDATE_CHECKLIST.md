@@ -27,6 +27,9 @@
 - [x] UI pops: score bump, glow pulse on a newly restored legend pill, cards dealt in, and pop-in result icons.
 - [x] Synthesized sound effects (no audio files): dice rattle, bounces, landing chime, natural-20 arpeggio, hops, correct/miss, restore, arrival, win. Off by default, with a speaker button in the header.
 - [x] On phones the board scrolls into view for hops and celebrations; Gentle mode skips all motion.
+- [x] Board pieces use the Little Misfits personalities again: Blu with bent cat ears and one tiny fang, Ember with crooked horns, a cheeky grin and two fangs, sleepy Moss on the core. Pieces lean back so their faces read from above; fangs are enlarged at board size.
+- [x] Scoreboard avatars are portraits rendered from the same 3D models (hand-drawn look-alike fallbacks without WebGL).
+- [ ] Decide whether "The ghosts" page should show the Little Misfits pieces as well as the v003 reference sculpts.
 
 ## Shipped
 

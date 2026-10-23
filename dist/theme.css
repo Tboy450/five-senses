@@ -69,7 +69,8 @@ nav{display:flex;align-items:center;gap:18px;margin-left:auto}
 .player-card{--glow:var(--p0);position:relative;flex:1;min-width:0;display:flex;align-items:center;gap:12px;padding:10px 16px 10px 12px;opacity:.8;transition:opacity .25s,box-shadow .25s,border-color .25s}
 .player-card.coral{--glow:var(--p1)}
 .player-card.active{opacity:1;border-color:var(--glow);box-shadow:3px -2px 0 -1px color-mix(in srgb,var(--glow) 45%,transparent),-2px 3px 0 -1px color-mix(in srgb,var(--glow) 35%,transparent),0 0 26px color-mix(in srgb,var(--glow) 40%,transparent),inset 0 0 26px color-mix(in srgb,var(--glow) 12%,transparent)}
-.avatar{width:48px;height:48px;flex-shrink:0;color:var(--glow);filter:drop-shadow(0 0 8px color-mix(in srgb,var(--glow) 60%,transparent))}
+.avatar{display:block;width:56px;height:56px;margin:-6px 0 -6px -4px;flex-shrink:0;filter:drop-shadow(0 0 8px color-mix(in srgb,var(--glow) 60%,transparent))}
+.avatar svg,.avatar img{display:block;width:100%;height:100%}
 .player-info{min-width:0}
 .player-info b{display:block;font:700 21px/1.2 var(--marker);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .player-info>span{display:block;font:700 12px/1.25 var(--body);letter-spacing:.8px;color:var(--muted);margin-top:2px}
@@ -298,7 +299,7 @@ body.calm .player-card.active{box-shadow:none}
 .action-card h2{font-size:25px;margin:8px 0 6px}
 .action-card p{font-size:14px}
 .player-card{padding-top:7px;padding-bottom:7px}
-.avatar{width:40px;height:40px}
+.avatar{width:46px;height:46px}
 .score b{font-size:32px}
 }
 
@@ -363,7 +364,7 @@ nav{gap:10px}
 .scoreboard{gap:6px}
 .versus{font-size:20px}
 .player-card{gap:8px;padding:9px 10px 8px 8px;border-radius:14px}
-.avatar{width:32px;height:32px}
+.avatar{width:40px;height:40px;margin:-4px 0 -4px -2px}
 .player-info b{font-size:16px}
 .player-info>span{font-size:11px;letter-spacing:.3px}
 .score b{font-size:29px}

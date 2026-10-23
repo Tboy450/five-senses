@@ -10,6 +10,8 @@ See [UPDATE_CHECKLIST.md](UPDATE_CHECKLIST.md) for shipped features, next polish
 
 The d20 drops in, bounces, and tumbles onto the rolled face with a landing glow. Ghosts hop tile to tile with clay squash and stretch. Restoring a beacon, reaching the core, and winning set off spark bursts, light rings, and cheer jumps. Optional sound effects are synthesized in the browser with WebAudio, so there are no audio files. They are off by default and toggled from the speaker button in the header. Gentle mode turns all motion off.
 
+The playing pieces use the v002 Little Misfits personalities: Blu with bent cat ears and one tiny fang, Ember with crooked horns, a cheeky grin and two fangs, and sleepy Moss on the core (`makeMisfit` in `dist/model.js`). The v003 reference sculpts remain the downloadable reference set. Scoreboard avatars are rendered from the same models at load.
+
 ## Neon art edition v006
 
 The interface now takes its look from the board artwork. A blurred copy of the art sits behind the page. The header carries the painted "5 SENSES" logo over a dripping-paint edge. The sense legend uses the art's own SEE / HEAR / SMELL / TASTE / TOUCH icons, which glow as beacons are restored. Panels use hand-drawn neon strokes and marker lettering. The 3D table sits on a transparent stage with an ink-black base and a neon rim. The d20 has painted swirl faces and bold numerals in the logo's sunset gradient. These derived UI assets (`dist/assets/logo-5senses.webp`, `sense-icons.webp`, `backdrop.jpg`) are crops of `original-board.jpg`.
