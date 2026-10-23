@@ -19,6 +19,15 @@
 - [x] On-screen zoom in/out buttons.
 - [x] GitHub Pages copy at https://tboy450.github.io/five-senses/, redeployed by a workflow on every push to `main`.
 
+## Animation & sound (v007)
+
+- [x] d20 drops in from above, bounces three times, and tumbles to a stop on the rolled face, with a soft shadow, landing glow, and number pulse (gold for a natural 20).
+- [x] Ghosts hop tile to tile with a clay crouch, stretch, lean, and landing squash; a ring of light marks each landing. Idle "breathing" when still.
+- [x] Celebrations: spark burst, light rings, beacon flare, and cheer jumps on restores; a fireworks burst and spin-jump on arrival at the core; a triple burst for the win; sparks on correct answers.
+- [x] UI pops: score bump, glow pulse on a newly restored legend pill, cards dealt in, and pop-in result icons.
+- [x] Synthesized sound effects (no audio files): dice rattle, bounces, landing chime, natural-20 arpeggio, hops, correct/miss, restore, arrival, win. Off by default, with a speaker button in the header.
+- [x] On phones the board scrolls into view for hops and celebrations; Gentle mode skips all motion.
+
 ## Shipped
 
 - [x] Two-human, shared-screen d20 game with saved progress.
@@ -43,8 +52,6 @@
 - [ ] Restyle the ghost studio's light "clay room" stage to match the neon theme.
 - [ ] Add player character selection and keep the chosen model with the saved game.
 - [ ] Refine clay surfaces, eye shapes, and animation from feedback on the three samples.
-- [ ] Add gentle claymation idle, hop, celebration, and repair animations.
-- [ ] Improve d20 roll easing and optional sound effects.
 - [ ] Expand the challenge deck while preserving accessible screen-based alternatives.
 - [ ] Add undo/recovery for accidental inputs and clearer resume feedback.
 - [ ] Capture a full session for additional end-to-end browser coverage.

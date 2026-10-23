@@ -26,6 +26,11 @@ h1>span{color:var(--pink)}
 header,main{max-width:1800px;margin:0 auto;padding:0 24px}
 .eyebrow{font:800 11.5px/1.2 var(--body);letter-spacing:1.8px;text-transform:uppercase;color:var(--violet)}
 @keyframes pulse{50%{opacity:.4}}
+@keyframes bump{30%{transform:scale(1.4)}}
+@keyframes fresh{0%{box-shadow:0 0 0 0 var(--c)}35%{transform:scale(1.07);box-shadow:0 0 30px 6px var(--c)}}
+@keyframes pop{0%{transform:scale(.3);opacity:0}70%{transform:scale(1.12)}}
+@keyframes rise{from{transform:translateY(12px);opacity:0}}
+@keyframes deal{from{transform:translateY(-14px) rotate(-8deg) scale(.9);opacity:0}}
 @keyframes sheen{0%,62%{transform:translateX(-120%) skewX(-20deg)}100%{transform:translateX(320%) skewX(-20deg)}}
 
 /* Masthead with a dripping paint edge */
@@ -49,6 +54,7 @@ nav{display:flex;align-items:center;gap:18px;margin-left:auto}
 .local-badge i,.table-label i{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime)}
 .icon-button{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border-radius:12px;border:1.5px solid rgba(51,228,255,.5);background:rgba(10,8,24,.6);color:var(--cyan);font-size:22px;line-height:1;box-shadow:0 0 14px rgba(51,228,255,.18)}
 .icon-button:hover{background:rgba(51,228,255,.14)}
+#soundBtn[aria-pressed="true"]{color:var(--pink);border-color:rgba(255,63,180,.6);box-shadow:0 0 16px rgba(255,63,180,.4)}
 
 /* Painted panels: neon stroke with a hand-drawn second pass, like the board's tiles */
 .player-card,.table-stage,.action-card,.energy-card,.activity-card,.route-details{--glow:var(--violet);border:1.5px solid color-mix(in srgb,var(--glow) 55%,transparent);border-radius:18px;background:var(--panel);box-shadow:3px -2px 0 -1px color-mix(in srgb,var(--glow) 28%,transparent),-2px 3px 0 -1px color-mix(in srgb,var(--glow) 20%,transparent),0 0 20px color-mix(in srgb,var(--glow) 16%,transparent)}
@@ -69,6 +75,7 @@ nav{display:flex;align-items:center;gap:18px;margin-left:auto}
 .player-info>span{display:block;font:700 12px/1.25 var(--body);letter-spacing:.8px;color:var(--muted);margin-top:2px}
 .score{margin-left:auto;text-align:right;flex-shrink:0}
 .score b{display:block;font:700 38px/1 var(--marker);color:var(--glow);text-shadow:0 0 16px color-mix(in srgb,var(--glow) 60%,transparent)}
+.score b.bump{animation:bump .6s cubic-bezier(.3,1.6,.5,1);transform-origin:right center}
 .score>span{display:block;font:800 11px var(--body);letter-spacing:1.6px;color:var(--muted);margin-top:2px}
 .turn-tag{display:none;position:absolute;top:-13px;left:16px;padding:2px 10px 3px;border-radius:6px 9px 7px 10px;background:#050308;border:2px solid #fff;color:#fff;font:700 12.5px/1.2 var(--marker);transform:rotate(-3deg);box-shadow:0 0 0 2px var(--glow),0 0 14px color-mix(in srgb,var(--glow) 60%,transparent);white-space:nowrap}
 .active .turn-tag{display:block}
@@ -106,6 +113,7 @@ canvas{display:block;touch-action:none;width:100%;height:100%}
 .beacon-pill.on .sense-icon{filter:drop-shadow(0 0 6px var(--c))}
 .beacon-pill.on .beacon-name{color:var(--c);text-shadow:0 0 10px color-mix(in srgb,var(--c) 60%,transparent)}
 .beacon-pill.on .tick{color:var(--c)}
+.beacon-pill.fresh{animation:fresh 1.2s ease-out 3}
 
 /* Side column */
 .play-column{display:flex;flex-direction:column;gap:12px;min-height:0}
@@ -173,6 +181,10 @@ body[data-turn="1"] .action-card{--glow:var(--p1)}
 .option-grid button{min-height:58px;padding:10px 6px;border-radius:12px;background:rgba(8,6,20,.7);border:1.5px solid rgba(51,228,255,.38);color:var(--ink);font:700 18px var(--marker)}
 .option-grid button:hover{border-color:var(--cyan);background:rgba(51,228,255,.12);box-shadow:0 0 16px rgba(51,228,255,.3)}
 .result-icon{display:grid;place-items:center;width:78px;height:78px;margin:18px auto 10px;border-radius:50%;font:700 36px var(--marker);color:var(--lime);border:2.5px solid var(--lime);background:rgba(184,244,60,.08);box-shadow:0 0 24px rgba(184,244,60,.4),inset 0 0 18px rgba(184,244,60,.2)}
+.result-icon,.action-card .points-result{animation:pop .55s cubic-bezier(.3,1.5,.5,1) both}
+.action-card .points-result{animation-name:rise;animation-delay:.12s}
+.memory-cards:not(.recall):not(.reveal) .memory-card{animation:deal .38s cubic-bezier(.3,1.4,.5,1) both}
+.memory-cards .memory-card:nth-child(2){animation-delay:.07s}.memory-cards .memory-card:nth-child(3){animation-delay:.14s}.memory-cards .memory-card:nth-child(4){animation-delay:.21s}.memory-cards .memory-card:nth-child(5){animation-delay:.28s}
 .result-icon.bad{color:var(--orange);border-color:var(--orange);background:rgba(255,161,43,.08);box-shadow:0 0 24px rgba(255,161,43,.4),inset 0 0 18px rgba(255,161,43,.2)}
 .points-result{margin:4px 0 10px;text-align:center;font:700 48px/1.1 var(--marker);color:var(--lime);text-shadow:0 0 18px rgba(184,244,60,.55)}
 .points-result.bad{color:var(--orange);text-shadow:0 0 18px rgba(255,161,43,.55)}
