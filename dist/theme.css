@@ -426,4 +426,13 @@ dialog h2{font-size:27px}
 .ghost-choice[aria-pressed=true]{background:rgba(51,228,255,.1);border-color:var(--cyan);box-shadow:0 0 16px rgba(51,228,255,.3)}
 .back-link{font-size:14.5px;color:var(--cyan)}
 .studio .primary{margin-top:6px}
-@media(max-width:700px){.studio-intro h1{font-size:34px}.ghost-profile h2{font-size:46px}.ghost-choice b{font-size:13px}.back-link{font-size:13px}}
+.set-switch{display:flex;gap:6px;width:max-content;max-width:100%;margin:0 0 16px;padding:5px;border-radius:16px;background:var(--panel);border:1.5px solid var(--line)}
+.set-switch button{display:flex;flex-direction:column;align-items:flex-start;padding:8px 16px;border-radius:12px;font:700 16px/1.2 var(--marker);color:var(--muted);text-align:left}
+.set-switch button small{font:800 10.5px/1.4 var(--body);letter-spacing:.8px;text-transform:uppercase;color:var(--dim)}
+.set-switch button:hover{color:var(--ink)}
+.set-switch button[aria-pressed="true"]{background:var(--paint);color:#14051c;box-shadow:0 0 18px rgba(255,63,180,.35)}
+.set-switch button[aria-pressed="true"] small{color:#4a1650}
+.ghost-choice i.portrait{width:62px;height:62px;margin:-10px 0;background:none;box-shadow:none;border-radius:0;filter:drop-shadow(0 0 8px color-mix(in srgb,var(--ghost-color) 60%,transparent))}
+.ghost-choice i.portrait:before{content:none}
+.ghost-choice i.portrait img{display:block;width:100%;height:100%}
+@media(max-width:700px){.set-switch{width:100%}.set-switch button{flex:1;padding:8px 10px;font-size:14px}.ghost-choice i.portrait{width:54px;height:54px;margin:-4px 0}.studio-intro h1{font-size:34px}.ghost-profile h2{font-size:46px}.ghost-choice b{font-size:13px}.back-link{font-size:13px}}
